@@ -5,7 +5,7 @@ paginate: true
 theme: default
 headingDivider: 2
 header: Ennova Research • Data & AI XTDF Division
-footer: GenAI Bootcamp — Preliminaries
+footer: GenAI Bootcamp — Welcome & Orientation
 # class: lead
 ---
 
