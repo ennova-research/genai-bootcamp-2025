@@ -115,17 +115,19 @@ flowchart LR
 ## 🧱 Example: Factory Pattern
 
 ```python
-class ModelFactory:
-
-    def get_model(self, name):
-        if name == "openai":
-            return OpenAIModel()
-
-        elif name == "gemini":
-            return GeminiModel()
-
+class ClientFactory:
+    def get_client(self, name):
+        if name == 'openai':
+            from openai import OpenAI
+            return OpenAI()
+        elif name == 'gemini':
+            from google import genai
+            return genai.Client()
         else:
-            raise ValueError("Unknown model")
+            raise ValueError('Unknown client')
+
+factory = ClientFactory()
+client = factory.get_client('openai')
 ```
 
 ---
@@ -133,32 +135,51 @@ class ModelFactory:
 ## 🧭 Example: Strategy Pattern
 
 ```python
-class Summarizer:
+def summarize_basic(text):
+    return text.split('.')[0] + '.'
 
-    def __init__(self, strategy):
-        self.strategy = strategy
-
-    def summarize(self, text):
-        return self.strategy(text)
+def summarize_keywords(text):
+    return ', '.join(text.split()[:5]) + '...'
 ```
 
-Use different summarization strategies without changing main code.
+Want to use different summarization strategies without changing main code.
+
+---
+
+## 🧭 Example: Strategy Pattern
+
+Can be done via dependency injection:
+
+```python
+class Summarizer:
+    def __init__(self, strategy):
+        self.strategy = strategy
+    def summarize(self, text):
+        return self.strategy(text)
+
+text = 'Generative AI is revolutionizing industry.'
+summarizer = Summarizer(summarize_keywords)
+print('Keywords:', summarizer.summarize(text))
+```
 
 ---
 
 ## 🔌 Example: Adapter Pattern
 
 ```python
-class OpenAIAdapter:
+from openai import OpenAI
 
+class OpenAIAdapter:
     def __init__(self, client):
         self.client = client
-
     def generate(self, prompt):
         return self.client.chat.completions.create(
             model="gpt-4o-mini",
             messages=[{"role": "user", "content": prompt}]
         ).choices[0].message.content
+
+adapter = OpenAIAdapter(client)
+print(adapter.generate('Hello world!'))
 ```
 
 ---
@@ -170,9 +191,11 @@ class OpenAIAdapter:
 
 ```python
 class LoggerObserver:
-
     def update(self, data):
         print("Logging:", data)
+
+observer = LoggerObserver()
+observer.update({'event': 'inference', 'result': 'Success'})
 ```
 
 ---
@@ -182,10 +205,12 @@ class LoggerObserver:
 Combine multiple patterns to build modular pipelines:
 
 ```python
-factory = ModelFactory()
-model = factory.get_model("openai")
-adapter = OpenAIAdapter(model)
-result = adapter.generate("Hello AI!")
+factory = ClientFactory()
+client = factory.get_client("openai")
+adapter = OpenAIAdapter(client)
+observer = LoggerObserver()
+output = adapter.generate('Describe AI design patterns.')
+observer.update({'event': 'output', 'data': output})
 ```
 
 ---
