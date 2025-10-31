@@ -3,14 +3,15 @@ marp: true
 title: "Icebreaker & Setup Lab"
 paginate: true
 theme: default
-headingDivider: 2
 header: Ennova Research • Data & AI XTDF Division
 footer: GenAI Bootcamp — Icebreaker & Setup Lab
 ---
 
 # 💻 Generative AI Bootcamp
-### Session 2 – Icebreaker & Setup Lab
+## Session 2 – Icebreaker & Setup Lab
+*November 13, 2025*
 
+---
 
 ## 🎯 Objectives
 
@@ -18,6 +19,7 @@ footer: GenAI Bootcamp — Icebreaker & Setup Lab
 - Set up your development environment  
 - Verify access to APIs and tools
 
+---
 
 ## 👥 Icebreaker Activity
 
@@ -25,6 +27,7 @@ footer: GenAI Bootcamp — Icebreaker & Setup Lab
 - Share an experience you've had with Generative AI that's been fun, interesting or otherwise memorable
 - Discuss your expectations for this bootcamp
 
+---
 
 ## 🧩 Environment Setup
 
@@ -40,6 +43,7 @@ We’ll ensure everyone can run code locally:
    pip install -r requirements.txt
    ```
 
+---
 
 ## 🧩 Environment Setup
 
