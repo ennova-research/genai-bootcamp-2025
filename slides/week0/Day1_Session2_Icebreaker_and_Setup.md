@@ -33,7 +33,7 @@ footer: GenAI Bootcamp — Icebreaker & Setup Lab
 
 We’ll ensure everyone can run code locally:
 
-1. Install **Python 3.12+**. If your system's python is older, use `pyenv` / `pyenv-win`
+1. Install **Python 3.12+**. If your system's python is older, use `pyenv` / `pyenv-win` (or `uv` for a full, fast package and project manager).
 2. Create and activate a virtual environment:
    
    ```bash
