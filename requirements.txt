@@ -2,6 +2,7 @@ dotenv
 requests
 google-genai
 openai
+pytest
 ruff
 mypy
 black
