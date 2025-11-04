@@ -25,7 +25,7 @@
 
 | Time | Type | Topic | Description / Learning Activities |
 |------|------|--------|----------------------------------|
-| **09:30–10:30** | Theoretical | **Advanced OOP in AI Systems** | Classes, inheritance, composition, interfaces, and mixins for scalable AI pipelines. |
+| **09:30–10:30** | Theoretical | **OOP in AI Systems** | Classes, inheritance, composition, interfaces, and mixins for scalable AI pipelines. |
 | **10:45–11:45** | Practical | **OOP Implementation Lab** | Build a simple inference pipeline class hierarchy (Tokenizer → Model → OutputFormatter). |
 | **12:00–13:00** | Theoretical | **Async Programming & API Concurrency** | Understand `asyncio`, tasks, and parallel API calls for LLM interactions. |
 | **14:30–15:30** | Practical | **Async Hands-on: Concurrent LLM Calls** | Implement async requests to multiple model endpoints and measure latency. |
