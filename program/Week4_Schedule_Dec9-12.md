@@ -44,7 +44,7 @@
 | **12:00–13:00** | Theoretical | **Evaluation of Agent Reasoning** | Learn traceability, chain-of-thought logging, and self-critique methods. |
 | **14:30–15:30** | Practical | **Agent Evaluation Lab** | Use LangSmith or custom logging to analyze agent decisions and tool use accuracy. |
 | **15:45–16:45** | Theoretical | **Scaling Agents & Ethical Concerns** | Discuss looping failures, tool misuse, and autonomy boundaries. Introduce guardrail strategies. |
-| **17:00–18:00** | Practical | **Mini Challenge: Traceable Agent Pipeline** | Teams build an agent workflow with trace visualization and error reporting. |
+| **17:00–18:00** | Practical | **Mini Challenge: Traceable Agent Pipeline** | Build an agent workflow with trace visualization and error reporting. |
 
 ---
 
@@ -56,9 +56,9 @@
 | **09:30–10:30** | Theoretical | **Enterprise Use Cases for Agents** | Explore real-world applications: customer support, data retrieval, and code assistants. |
 | **10:45–11:45** | Practical | **Agent Integration Lab** | Connect agents with external APIs (Google Search, BigQuery, Watson X) through LangChain tools. |
 | **12:00–13:00** | Theoretical | **Designing End-to-End Agentic Systems** | Architect RAG + Agent + Tool chains with evaluation loops. Plan deployment for Week 5. |
-| **14:30–15:30** | Practical | **Capstone Kickoff: Agent Blueprints** | Teams define use-cases and design blueprints for cloud deployment next week. |
+| **14:30–15:30** | Practical | **Capstone Kickoff: Agent Blueprints** | Define use-cases and design blueprints for cloud deployment next week. |
 | **15:45–16:45** | Theoretical | **Best Practices & Failure Modes** | Summarize lessons from Weeks 1–4. Discuss debugging and observability for agents. |
-| **17:00–18:00** | Practical | **Showcase: Autonomous Agent Demo** | Teams present a functioning LLM agent demonstrating tool use, memory, and evaluation features. Peer review session. |
+| **17:00–18:00** | Practical | **Showcase: Autonomous Agent Demo** | Present a functioning LLM agent demonstrating tool use, memory, and evaluation features. Peer review session. |
 
 ---
 

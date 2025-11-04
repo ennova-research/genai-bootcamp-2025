@@ -58,7 +58,7 @@
 | 12:00–13:00 | Theoretical | **Monitoring and Observability** | Learn to instrument apps with Cloud Monitoring, Prometheus, and custom metrics. |
 | 14:30–15:30 | Practical | **Observability Lab 2** | Integrate logging and tracing for LLM responses and cost usage tracking. |
 | 15:45–16:45 | Theoretical | **Cost and Performance Optimization** | Strategies to reduce latency and expenses: model caching, batching, streaming, and quantization. |
-| 17:00–18:00 | Practical | **Optimization Challenge** | Teams profile and optimize their deployed service for throughput and cost. |
+| 17:00–18:00 | Practical | **Optimization Challenge** | Profile and optimize deployed services for throughput and cost. |
 
 ---
 
@@ -72,7 +72,7 @@
 | 12:00–13:00 | Theoretical | **Ethics & Performance in Cloud AI** | Address bias, sustainability, privacy, and regulatory compliance in deployed AI systems. |
 | 14:30–15:30 | Practical | **Evaluation Dashboard Lab** | Create a simple Streamlit dashboard showing response quality, costs, and carbon metrics. |
 | 15:45–16:45 | Theoretical | **Capstone Integration Guidelines** | Review requirements for final projects: architecture, deployment checklist, and evaluation rubric. |
-| 17:00–18:00 | Practical | **Team Showcase & Cloud Demo Prep** | Teams present their deployed services and receive feedback for final week refinement. |
+| 17:00–18:00 | Practical | **Team Showcase & Cloud Demo Prep** | Present deployed services and receive feedback. |
 
 ---
 

@@ -72,7 +72,7 @@
 | **12:00–13:00** | Theoretical | **Design Review & Optimization** | Evaluate design patterns and performance trade-offs in AI codebases. |
 | **14:30–15:30** | Practical | **Debug & Optimize** | Profile performance, add async batching, and tune logging. |
 | **15:45–16:45** | Theoretical | **Preview: Data Handling & Databases (Next Week)** | Bridge concepts from APIs to data pipelines and retrieval systems. |
-| **17:00–18:00** | Practical | **Showcase: “AI Service in a Container”** | Team presentations of containerized AI microservices with FastAPI and Docker. |
+| **17:00–18:00** | Practical | **Showcase: “AI Service in a Container”** | Individual presentations of containerized AI microservices with FastAPI and Docker. |
 
 ---
 

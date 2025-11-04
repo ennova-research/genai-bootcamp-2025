@@ -56,9 +56,9 @@
 | **09:30–10:30** | Theoretical | **Evaluation Frameworks & Tools** | Overview of evaluation pipelines: TruthfulQA, HELM, and custom metrics for enterprise LLMs. |
 | **10:45–11:45** | Practical | **Evaluation Toolkit Lab** | Implement automated evaluation using open frameworks or custom scoring scripts. |
 | **12:00–13:00** | Theoretical | **Optimizing Prompts for Business Use Cases** | Explore task-specific optimization: summarization, classification, and agentic reasoning. |
-| **14:30–15:30** | Practical | **Prompt Optimization Challenge** | Teams refine prompts for accuracy, creativity, and safety. Log and compare iterations. |
+| **14:30–15:30** | Practical | **Prompt Optimization Challenge** | Refine prompts for accuracy, creativity, and safety. Log and compare iterations. |
 | **15:45–16:45** | Theoretical | **Connecting Fine-Tuning & Prompting** | Discuss hybrid workflows (RAG + tuning + prompt design). Prepare for agent-based next week. |
-| **17:00–18:00** | Practical | **Showcase: Prompt Evaluation Project** | Teams present a project combining fine-tuning, prompting, and evaluation. Peer review session. |
+| **17:00–18:00** | Practical | **Showcase: Prompt Evaluation Project** | Present a project combining fine-tuning, prompting, and evaluation. Peer review session. |
 
 ---
 

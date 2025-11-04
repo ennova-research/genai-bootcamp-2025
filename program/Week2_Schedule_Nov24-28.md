@@ -73,7 +73,7 @@
 | **12:00–13:00** | Theoretical | **Connecting Data Modalities** | Discuss hybrid pipelines combining SQL, NoSQL, and vector stores for RAG and agents. |
 | **14:30–15:30** | Practical | **Integration Lab: Unified Data API** | Build a Python layer integrating SQL + vector queries for retrieval. |
 | **15:45–16:45** | Theoretical | **Data Governance & Security in AI Systems** | Cover access control, anonymization, and compliance. |
-| **17:00–18:00** | Practical | **Showcase: End-to-End Retrieval Pipeline** | Teams present a complete ETL → store → query → retrieval pipeline powering a generative model. |
+| **17:00–18:00** | Practical | **Showcase: End-to-End Retrieval Pipeline** | Presentation of a complete ETL → store → query → retrieval pipeline powering a generative model. |
 
 ---
 
