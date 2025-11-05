@@ -40,11 +40,11 @@
 | Time | Type | Topic | Description / Learning Activities |
 |------|------|--------|----------------------------------|
 | **09:30–10:30** | Theoretical | **Service Design & RESTful APIs** | Explore HTTP verbs, routing, and schema validation with FastAPI. |
-| **10:45–11:45** | Practical | **FastAPI Lab: Create a Model Service Endpoint** | Build and test a REST API wrapping a simple AI model. |
+| **10:45–11:45** | Practical | **Project Lab 1: Bootstrap service** | Scaffold monorepo, add `pyproject/deps`, `app/main.py`, health route `/health`. Implement schemas, domain models, `InMemoryStore`. **Checkpoint:** `POST /v1/prompts` and `GET /v1/prompts` work locally. |
 | **12:00–13:00** | Theoretical | **Config, Logging & Error Handling** | Discuss `.env`, YAML/JSON configs, and structured logging (`logging`, `pydantic`, `rich`). |
-| **14:30–15:30** | Practical | **Implement Config + Logging Layers** | Add configuration loading and robust error handling to the service. |
+| **14:30–15:30** | Practical | **Project Lab 2: Config, Logging & Errors** | Add `Settings`, structured logging, global error handler; propagate `X-User-Id`. **Checkpoint:** logs show request flow; 4xx vs 5xx semantics verified. |
 | **15:45–16:45** | Theoretical | **Testing & Quality Assurance** | Review unit testing, mocking, and CI basics for AI codebases. |
-| **17:00–18:00** | Practical | **PyTest Lab: Mocking AI Calls** | Write tests mocking LLM responses; measure coverage and edge cases. |
+| **17:00–18:00** | Practical | **Project Lab 3: Prediction Endpoint** | Implement `processor.py`, mock LLM, `/v1/predict` with active prompt resolution. **Checkpoint:** given a prompt & document, API returns mock output with metadata. |
 
 ---
 
@@ -54,11 +54,11 @@
 | Time | Type | Topic | Description / Learning Activities |
 |------|------|--------|----------------------------------|
 | **09:30–10:30** | Theoretical | **Packaging AI Projects** | Explore `setup.py`, `pyproject.toml`, versioning, and dependency management. |
-| **10:45–11:45** | Practical | **Hands-on: Package a Local Library** | Package your inference utilities as a Python library and publish locally. |
+| **10:45–11:45** | Practical | **Project Lab 4: Tests & Mocks** | Write tests for prompt CRUD, activation, predict happy path + errors. **Checkpoint:** `pytest` passes (≥8 tests), coverage report optional. |
 | **12:00–13:00** | Theoretical | **Intro to CI/CD for AI** | Understand pipelines for code testing, linting, and deployment (GitHub Actions / Cloud Build). |
-| **14:30–15:30** | Practical | **CI Pipeline Simulation** | Create a simple YAML workflow for auto-testing and packaging. |
+| **14:30–15:30** | Practical | **Project Lab 5: CI Pipeline** | Add Ruff + CI workflow; fix lint issues. **Checkpoint:** PR triggers green CI. |
 | **15:45–16:45** | Theoretical | **Docker Fundamentals** | Learn Docker concepts: images, layers, containers, and volumes. |
-| **17:00–18:00** | Practical | **Docker Lab: Containerize Your Service** | Dockerize the FastAPI AI microservice with configs and dependencies. |
+| **17:00–18:00** | Practical | **Project Lab 6: Containerization** | Write Dockerfile, build and run; confirm endpoints via `curl` or client. **Checkpoint:** `docker run -p 8080:8080 ...` serves API and persists JSON snapshot. |
 
 ---
 
@@ -68,11 +68,11 @@
 | Time | Type | Topic | Description / Learning Activities |
 |------|------|--------|----------------------------------|
 | **09:30–10:30** | Theoretical | **From Code to Cloud** | Recap of MLOps workflow: development → packaging → containerization → deployment. |
-| **10:45–11:45** | Practical | **Mini-Project Kickoff: AI Microservice Suite** | Integrate modules into a cohesive AI microservice stack. |
+| **10:45–11:45** | Practical | **Project Lab 7: Improvement Pass** | Add `PATCH /prompts/{id}` (version bump), `GET /prompts/active`. **Checkpoint:** version increments on template change; active prompt visible. |
 | **12:00–13:00** | Theoretical | **Design Review & Optimization** | Evaluate design patterns and performance trade-offs in AI codebases. |
-| **14:30–15:30** | Practical | **Debug & Optimize** | Profile performance, add async batching, and tune logging. |
+| **14:30–15:30** | Practical | **Project Lab 8: Perf & Robustness** | Add request size limit, input validation, timeouts in processor. Optional: simple timing and latency field. **Checkpoint:** oversized docs rejected; latency captured. |
 | **15:45–16:45** | Theoretical | **Preview: Data Handling & Databases (Next Week)** | Bridge concepts from APIs to data pipelines and retrieval systems. |
-| **17:00–18:00** | Practical | **Showcase: “AI Service in a Container”** | Individual presentations of containerized AI microservices with FastAPI and Docker. |
+| **17:00–18:00** | Practical | **Project Lab 9: Showcase & Review** | Demo containerized service; run rubric; collect logs/metrics snippet. **Checkpoint:** ready-to-present microservice. |
 
 ---
 
