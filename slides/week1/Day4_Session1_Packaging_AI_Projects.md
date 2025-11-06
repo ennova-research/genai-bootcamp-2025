@@ -32,6 +32,16 @@ math: mathjax
 
 ---
 
+## Semantic Versioning
+
+- **MAJOR.MINOR.PATCH** (e.g., 1.3.5)  
+- Increment based on:  
+  - MAJOR → breaking changes  
+  - MINOR → new features (backward compatible)  
+  - PATCH → bug fixes  
+
+---
+
 ## Standard Project Layout
 
 ```
@@ -51,7 +61,7 @@ my_ai_project/
 
 ---
 
-## pyproject.toml Basics
+## `pyproject.toml` Basics
 
 ```toml
 [project]
@@ -63,19 +73,29 @@ dependencies = ["fastapi", "pydantic", "requests"]
 requires-python = ">=3.10"
 
 [build-system]
-requires = ["setuptools", "wheel"]
+requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 ```
 
 ---
 
-## Semantic Versioning
+## `pyproject.toml` Dependency Versioning
 
-- **MAJOR.MINOR.PATCH** (e.g., 1.3.5)  
-- Increment based on:  
-  - MAJOR → breaking changes  
-  - MINOR → new features (backward compatible)  
-  - PATCH → bug fixes  
+  - comma-separated bounds, operators `==`, `>=`, `<`, `!=`
+  - `~=1.2.3` is equivalent to `>=1.2.3, <2`, or `>=1.2.3, ==1.*`
+  - conditional dependencies:
+    - `backports.ssl_match_hostname ~= 3.5; python_version < "3.5"`
+    - `colorama ~= 0.4; sys_platform == "win32"`
+
+
+---
+
+## `pyproject.toml` Build Systems
+
+Frontend (CLI) and backend. Examples:
+  - `setuptools`, `setuptools.build_meta`
+  - `poetry`, `poetry-core` (different `pyproject.toml` conventions)
+  - Flit, Hatch, PDM...
 
 ---
 
@@ -87,6 +107,7 @@ build-backend = "setuptools.build_meta"
 | `pip-tools` | Dependency pinning |
 | `poetry` | Full-featured dependency + packaging |
 | `uv` | Fast modern alternative |
+| `conda` | Handles non-Python dependencies, useful in data science and scientific computing |
 
 ---
 

@@ -8,11 +8,9 @@ footer: GenAI Bootcamp — From Code to Cloud
 math: mathjax
 ---
 
-# 🧠 Generative AI Bootcamp – Week 1  
-### Week 1 – Day 5 – Session 1  
-## **From Code to Cloud**  
-**Theme:** MLOps Integration & Deployment Fundamentals  
-**Duration:** 09:30–10:30
+# ☁ From Code to Cloud
+**Generative AI Bootcamp – Week 1, Day 5, Session 1**
+_November 21, 2025_
 
 ---
 
@@ -25,15 +23,16 @@ math: mathjax
 
 ## 🏗️ From Local Code to Deployed AI Service
 1. **Develop locally**: write, test, and refactor Python code  
-2. **Package and containerize**: ensure reproducibility  
-3. **Deploy and monitor**: scale using cloud infrastructure  
+2. **Package**: environment consistency and code reusability
+3. **Containerize**: build and run anywhere
+4. **Deploy and monitor**: scale using cloud infrastructure  
 
 ---
 
 ## 🧩 MLOps Lifecycle Overview
 1. **Development**
-2. **Packaging**
-3. **Containerization**
+2. **Packaging** → consistency and reusability
+3. **Containerization** → platform abstraction and scalability
 4. **Deployment**
 5. **Monitoring & Maintenance**
 
@@ -50,9 +49,9 @@ Each phase introduces automation and reliability to AI delivery.
 ---
 
 ## 📦 Packaging & Containerization
-- Package code into Python distributions (`setup.py`, `pyproject.toml`)  
+- Package code into Python distributions (`pyproject.toml`)  
 - Use **Docker** to containerize environments  
-- Manage dependencies using `requirements.txt` or `poetry`
+- Build container environment using `requirements.txt`
 
 ---
 
@@ -84,7 +83,7 @@ Each phase introduces automation and reliability to AI delivery.
 ## 🩺 Monitoring & Logging
 - Log structured data using `logging` and `rich`
 - Track latency, errors, and uptime
-- Use Prometheus + Grafana for metrics visualization
+- Use Cloud Monitoring / CloudWatch, or Prometheus + Grafana for metrics visualization
 - Integrate alerts for model drift or service failure
 
 ---
