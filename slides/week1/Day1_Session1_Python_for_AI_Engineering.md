@@ -35,9 +35,11 @@ math: mathjax
 ## Clean Python Code Principles
 
 1. **Explicit is better than implicit** (Zen of Python)  
-2. Use **type hints** and **docstrings**  
-3. Follow **PEP8** conventions  
-4. Prefer **composition** over inheritance for modular AI pipelines  
+1. Use **type hints** and **docstrings**  
+1. Follow **PEP8** conventions  
+1. Write **modular** code (no logic duplication)
+1. Avoid side effects (particularily, global variables)
+1. Prefer **composition** over inheritance for modular AI pipelines  
 
 ---
 
@@ -50,6 +52,15 @@ Complex is better than complicated.
 Flat is better than nested.
 Readability counts.
 There should be one – and preferably only one – obvious way to do it.
+
+---
+
+## The Importance of Type Hints
+
+- Help catch bugs early by enabling static analysis tools like MyPy
+- Make code self-documenting, providing immediate clarity on function parameters and return values without requiring detailed docstrings
+- Enhance developer productivity through better IDE support, including autocomplete, error highlighting, code navigation, and safer refactoring
+- Support advanced use cases such as runtime validation (e.g., Pydantic, typeguard), dependency injection (e.g., Lagom), and automatic API documentation generation (e.g., drf-spectacular for OpenAPI specs)
 
 ---
 
@@ -132,6 +143,14 @@ if x == 4 : print(x , y) ; x , y = y , x
 ## (Parenthesis II: from PEP8)
 
 🧠✏️ Homework: take a close look at PEP8 🙏
+
+---
+
+## Helpful Tools
+
+- Coding style: formatters like `black`
+- Static analysis I: linters like `ruff` (unused variables, incorrect syntax, excessive function complexity, or misuse of APIs)
+- Static analysis II: type checkers like `mypy`
 
 ---
 
