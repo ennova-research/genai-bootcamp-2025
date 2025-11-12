@@ -8,7 +8,8 @@ footer: GenAI Bootcamp — Icebreaker & Setup Lab
 ---
 
 # 💻 Generative AI Bootcamp
-## Session 2 – Icebreaker & Setup Lab
+## Icebreaker & Setup Lab
+**Week 0, Day 1, Session 2**
 *November 13, 2025*
 
 ---

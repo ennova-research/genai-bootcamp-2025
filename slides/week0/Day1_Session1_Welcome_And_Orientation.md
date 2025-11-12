@@ -9,7 +9,8 @@ math: mathjax
 ---
 
 # 🧠 Generative AI Bootcamp
-## Session 1 – Welcome & Orientation: The AI Revolution
+## Welcome & Orientation: The AI Revolution
+**Week 0, Day 1, Session 1**
 *November 13, 2025*
 
 ---

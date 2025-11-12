@@ -9,7 +9,7 @@ math: mathjax
 ---
 
 # 🧠 Python for AI Engineering
-**Generative AI Bootcamp – Week 1, Session 1**
+**Generative AI Bootcamp – Week 1, Day 1, Session 1**
 *November 17, 2025*
 
 ---

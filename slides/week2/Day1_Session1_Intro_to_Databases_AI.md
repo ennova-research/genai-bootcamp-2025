@@ -9,7 +9,7 @@ math: mathjax
 ---
 
 # 🧠 Introduction to Databases in AI Systems
-**Generative AI Bootcamp – Week 2, Session 1**  
+**Generative AI Bootcamp – Week 2, Day 1, Session 1**  
 _November 24, 2025_
 
 ---

@@ -8,7 +8,8 @@ footer: GenAI Bootcamp — AI System Design Patterns
 ---
 
 # 🧠 Generative AI Bootcamp
-## Session 1 (Day 2) – AI System Design Patterns
+## AI System Design Patterns
+**Week 0, Day 2, Session 1**
 *November 14, 2025*
 
 ---
