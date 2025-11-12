@@ -41,11 +41,11 @@
 | Time | Type | Topic | Description / Learning Activities |
 |------|------|--------|----------------------------------|
 | **09:30–10:30** | Theoretical | **ETL Concepts for AI** | Explore Extract–Transform–Load pipelines in the context of AI data preparation. |
-| **10:45–11:45** | Practical | **Lab: Build an ETL Script** | Implement a Python ETL pipeline to clean and normalize text data from CSV/JSON. |
+| **10:45–11:45** | Practical | **SQLModel Setup** | `db.py` implementing `get_engine()`, `get_session()`. Screenshot or log showing `/health/db` returns OK. |
 | **12:00–13:00** | Theoretical | **Data Quality & Preprocessing** | Handle missing values, outliers, token limits, and prompt formatting. |
-| **14:30–15:30** | Practical | **Text Cleaning & Tokenization Lab** | Use `spaCy`, `tiktoken`, and regex to preprocess data for embeddings or fine-tuning. |
+| **14:30–15:30** | Practical | **Define Tables & Initial Migration** | `migrations/` directory with `env.py` and an `init` revision. SQLite or Postgres DB initialized successfully. |
 | **15:45–16:45** | Theoretical | **Prompt-Driven Data Transformation** | Discuss data filtering guided by prompt templates and contextual requirements. |
-| **17:00–18:00** | Practical | **Mini Project: Clean Dataset for Prompting** | Prepare a dataset for use in RAG or fine-tuning scenarios. Export clean output to BigQuery/CSV. |
+| **17:00–18:00** | Practical | **DB-Backed Prompt Store** | CRUD + activation working persistently. Restart app → data survives restart. |
 
 ---
 
@@ -55,11 +55,11 @@
 | Time | Type | Topic | Description / Learning Activities |
 |------|------|--------|----------------------------------|
 | **09:30–10:30** | Theoretical | **NoSQL Ecosystem Overview** | Explore document, key-value, columnar, and graph data models. |
-| **10:45–11:45** | Practical | **MongoDB / Firebase Lab** | Store and query unstructured JSON documents for AI apps. |
+| **10:45–11:45** | Practical | **Async Usage Logging** | After calling `/v1/predict`, a row appears in prompt_usage. |
 | **12:00–13:00** | Theoretical | **Vector Databases for LLMs** | Understand embeddings, cosine similarity, and nearest-neighbor search. |
-| **14:30–15:30** | Practical | **Vector Store Lab: FAISS / Chroma** | Build a local FAISS index; perform similarity search over embeddings. |
+| **14:30–15:30** | Practical | **`/v1/history` Endpoint** | JSON response sample with ≥ 3 records and filter working. Endpoint tested successfully. |
 | **15:45–16:45** | Theoretical | **Vector Store Comparison & Scaling** | Review FAISS, Pinecone, Weaviate, Milvus, and Redis. Discuss scalability and hybrid search. |
-| **17:00–18:00** | Practical | **Integration Challenge: Semantic Search Demo** | Combine embedding generation with FAISS for question-answer retrieval. |
+| **17:00–18:00** | Practical | **Postgres Migration + Optional Vector Store Experiment** | API connected to Postgres, all endpoints pass. Optional: small demo saving prompt embeddings to a local vector index. |
 
 ---
 
@@ -69,11 +69,11 @@
 | Time | Type | Topic | Description / Learning Activities |
 |------|------|--------|----------------------------------|
 | **09:30–10:30** | Theoretical | **Graph Databases & Cypher Language** | Introduction to graph theory concepts and Neo4j for knowledge graphs. |
-| **10:45–11:45** | Practical | **Neo4j Lab: Build a Mini Knowledge Graph** | Create entities and relationships, query using Cypher. |
+| **10:45–11:45** | Practical | **DB Fixtures & Tests** | `pytest` passes; show test summary. |
 | **12:00–13:00** | Theoretical | **Connecting Data Modalities** | Discuss hybrid pipelines combining SQL, NoSQL, and vector stores for RAG and agents. |
-| **14:30–15:30** | Practical | **Integration Lab: Unified Data API** | Build a Python layer integrating SQL + vector queries for retrieval. |
+| **14:30–15:30** | Practical | **ETL-Lite Export to CSV** | CSV generated under `var/exports/` with ≥ 5 rows. |
 | **15:45–16:45** | Theoretical | **Data Governance & Security in AI Systems** | Cover access control, anonymization, and compliance. |
-| **17:00–18:00** | Practical | **Showcase: End-to-End Retrieval Pipeline** | Presentation of a complete ETL → store → query → retrieval pipeline powering a generative model. |
+| **17:00–18:00** | Practical | **Review, Showcase & Governance Reflection** | PR link to `feat/week2-db-pipelines` branch. Reflection note in PR or markdown file. |
 
 ---
 
