@@ -1,5 +1,12 @@
 .vscode*
 __pycache__
 .env
-assets*
+.mypy_cache
+.ruff_cache
+project*
 instructor*
+week3
+week4
+week5
+old
+*.db
